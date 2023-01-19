@@ -1,0 +1,156 @@
+html body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.fonte {
+    opacity: 40%;
+    margin-bottom: 10px
+}
+
+#paragrafo1 {
+    opacity: 80%;
+    color: rgb(58, 53, 47);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "a a" "b b" "c d" "e e" "f f";
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    height: 250px;
+    grid-area: a;
+    width: 100%;
+}
+
+.bloco1 {
+    margin-left: 30px;
+    margin-right: 30px;
+    grid-area: b;
+    height: auto;
+    margin-bottom: auto;
+}
+
+.bloco2 {
+
+    grid-area: c;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.bloco3 {
+    grid-area: d;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+
+.bloco1 img {
+    border-radius: 1%;
+}
+
+.bloco2 img {
+    height: 350px;
+    border-radius: 1%;
+}
+
+.bloco3 img {
+    height: 350px;
+    border-radius: 1%;
+}
+
+.bloco4 {
+    grid-area: e;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    height: auto;
+}
+
+.bloco5 {
+    grid-area: f;
+    text-align: center;
+    color: rgb(58, 53, 47);
+    opacity: 80%;
+}
+
+#gradiente1 {
+    background: linear-gradient(to right, rgb(245, 4, 4), rgb(116, 14, 107));
+    width: 50%;
+    height: 5px;
+}
+
+#gradiente2 {
+    background: linear-gradient(to right, rgb(170, 175, 241), rgb(41, 14, 116));
+    width: 50%;
+    height: 5px;
+}
+
+#gradiente3 {
+    background: linear-gradient(to right, rgb(133, 223, 218), rgb(14, 116, 31));
+    width: 50%;
+    height: 5px;
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "a "
+            "b "
+            "c "
+            "d "
+            "e "
+            "f ";
+
+    }
+
+    #imgpadrao {
+        height: 300px;
+    }
+
+    .nav {
+        height: 200px;
+
+    }
+
+    .bloco1 {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: auto;
+        height: auto;
+    }
+
+    .bloco2 {
+
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-right: 30px;
+        height: auto;
+    }
+
+    .bloco3 {
+
+        margin-right: 30px;
+        margin-top: 20px;
+        margin-left: 30px;
+        height: auto;
+
+    }
+
+
+}
